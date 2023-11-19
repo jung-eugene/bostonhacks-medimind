@@ -2,14 +2,14 @@ import React from 'react';
 import { StyleSheet, View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons'; // Make sure to install expo icons or another icon library
 
-const Navbar = () => {
+const Navbar = ( {navigation} ) => {
   return (
     <View style={styles.navbarContainer}>
       <View style={styles.navbarContainer}>
           <TouchableOpacity style={styles.navItem}>
               <MaterialIcons name="home" size={24} color="black" />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.navItem}>
+          <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('FoodRec')}>
               <MaterialIcons name="restaurant-menu" size={24} color="black" />
           </TouchableOpacity>
           <TouchableOpacity style={styles.navItem}>

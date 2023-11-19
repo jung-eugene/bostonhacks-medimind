@@ -36,7 +36,7 @@ const Assessment1 = ( {navigation} ) => {
       {renderOption('Female', '2')}
       {renderOption('Other', '3')}
 
-      <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A3')}>
+      <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A2')}>
             <Text style={styles.continueText}>Continue</Text>
         </TouchableOpacity>
 

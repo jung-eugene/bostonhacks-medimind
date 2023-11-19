@@ -2,15 +2,31 @@ import React from 'react';
 import { StyleSheet, View, Text, Image, ScrollView, TouchableOpacity} from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons'; // Make sure to install expo icons or another icon library
 
+const Navbar = () => {
+    return (
+      <View style={styles.navbarContainer}>
+        <View style={styles.navbarContainer}>
+            <TouchableOpacity style={styles.navItem}>
+                <MaterialIcons name="home" size={24} color="black" />
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.navItem}>
+                <MaterialIcons name="restaurant-menu" size={24} color="black" />
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.navItem}>
+                <MaterialIcons name="calendar-today" size={24} color="black" />
+            </TouchableOpacity>
+        </View>
+      </View>
+    );
+  };
+
 const FoodRecommendation = () => {
     return (
-        <ScrollView style={styles.container}>
+        <View style={styles.container}>
+        <ScrollView style={styles.content}>
           {/* Header */}
           <View style={styles.header}>
             <Text style={styles.headerText}>Today's Meal</Text>
-            <TouchableOpacity style={styles.searchIcon}>
-              {/* You would include a search icon here */}
-            </TouchableOpacity>
           </View>
     
           {/* Challenge Section */}
@@ -52,15 +68,35 @@ const FoodRecommendation = () => {
                 style={styles.mealImage}
               />
             </TouchableOpacity>
+
+            <TouchableOpacity style={styles.mealItem}>
+              <Image
+                source={require('medimind/assets/Potatos_and_Beans.png')}
+                style={styles.mealImage}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.mealItem}>
+              <Image
+                source={require('medimind/assets/Steak_Tacos.png')}
+                style={styles.mealImage}
+              />
+            </TouchableOpacity>
     
             {/* ... Other meals */}
           </View>
         </ScrollView>
+
+        <Navbar/>
+        </View>
       );
     };
     
     const styles = StyleSheet.create({
       container: {
+        flex: 1,
+      },
+      content: {
         flex: 1,
         backgroundColor: '#fff',
         paddingTop: 50,
@@ -134,6 +170,24 @@ const FoodRecommendation = () => {
       mealInfo: {
         fontSize: 14,
         color: 'gray',
+      },
+      navbarContainer: {
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        backgroundColor: '#ffffff',
+        borderTopWidth: 1,
+        borderTopColor: '#dddddd',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        height: 70,
+        paddingBottom: 10,
+      },
+      navItem: {
+        alignItems: 'center',
+        justifyContent: 'center',
       },
     });
 

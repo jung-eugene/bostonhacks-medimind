@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
-<<<<<<< HEAD
 
 const Assessment3 = () => {
   const [selectedUnit, setSelectedUnit] = useState('kg');
@@ -23,30 +22,6 @@ const Assessment3 = () => {
         </View>
       </View>
 
-=======
-
-const Assessment3 = ( {navigation} ) => {
-  const [selectedUnit, setSelectedUnit] = useState('kg');
-
-  const handleUnitSelection = (unit) => {
-    setSelectedUnit(unit);
-  };
-
-  useEffect(() => {
-    // Set initial selection to 'kg'
-    setSelectedUnit('kg');
-  }, []); // Runs only once when the component mounts
-
-  return (
-    <View style={styles.container}>
-      <View style={styles.headerContainer}>
-        <Text style={styles.header}>Assessment</Text>
-        <View style={styles.numberContainer}>
-          <Text style={styles.number}>3 of 10</Text>
-        </View>
-      </View>
-
->>>>>>> 9336cc9 (v1)
       <Text style={styles.bigHeader}>What is your weight?</Text>
 
       <View style={styles.container1}>
@@ -87,10 +62,7 @@ const Assessment3 = ( {navigation} ) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-<<<<<<< HEAD
     backgroundColor: 'white'
-=======
->>>>>>> 9336cc9 (v1)
   },
   header: {
     marginTop: 60,
@@ -146,10 +118,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginTop: 33,
     textAlign: 'center',
-<<<<<<< HEAD
     fontWeight: 'bold'
-=======
->>>>>>> 9336cc9 (v1)
   },
   number: {
     fontSize: 10,

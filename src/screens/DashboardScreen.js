@@ -57,18 +57,16 @@ const DashboardScreen = ( {navigation} ) => {
       </ScrollView>
 
       <View style={styles.navbarContainer}>
-      <View style={styles.navbarContainer}>
           <TouchableOpacity style={styles.navItem}>
               <MaterialIcons name="home" size={24} color="black" />
           </TouchableOpacity>
           <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('FoodRec')}>
               <MaterialIcons name="restaurant-menu" size={24} color="black" />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.navItem}>
+          <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('SymptomChecker')}>
               <MaterialIcons name="calendar-today" size={24} color="black" />
           </TouchableOpacity>
       </View>
-    </View>
     </View>
     
   );

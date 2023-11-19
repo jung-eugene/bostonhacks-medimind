@@ -14,7 +14,7 @@ const FoodRecommendation = ( {navigation} ) => {
     
           {/* Challenge Section */}
           <TouchableOpacity style={styles.challengeCard}>
-            <Image
+            <Image 
               source={require('medimind/assets/Vegan_Month.png')}
               style={styles.challengeImage}
             />

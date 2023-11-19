@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
 
-const Assessment8 = () => {
+const Assessment8 = ( {navigation} ) => {
     const [selectedDay, setSelectedDay] = useState(null);
 
 const DayButton = ({ day }) => {
@@ -30,9 +30,9 @@ return (
         <DayButton key={day} day={day} />
         ))}
     </View>
-        <View style={styles.continueButton}>
+    <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A9')}>
             <Text style={styles.continueText}>Continue</Text>
-        </View>
+        </TouchableOpacity>
 
     </View>
 );

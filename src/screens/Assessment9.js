@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 
-const Assessment9 = () => {
+const Assessment9 = ( {navigation} ) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleSelectOption = (option) => {
@@ -38,9 +38,9 @@ const Assessment9 = () => {
       {renderOption('4: Bad (3-6 hours)', '4')}
       {renderOption('5: lnsomniac (<3 hours)', '5')}
 
-      <View style={styles.continueButton}>
+      <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('Dashboard')}>
         <Text style={styles.continueText}>Continue</Text>
-      </View>
+      </TouchableOpacity>
     </View>
   );
 };

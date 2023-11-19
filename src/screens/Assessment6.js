@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 
-const Assessment6 = () => {
+const Assessment6 = ( {navigation} ) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleOptionPress = (option) => {
@@ -68,9 +68,10 @@ const Assessment6 = () => {
         </TouchableOpacity>
       </View>
 
-      <View style={styles.continueButton}>
-        <Text style={styles.continueText}>Continue</Text>
-      </View>
+      <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A7')}>
+            <Text style={styles.continueText}>Continue</Text>
+        </TouchableOpacity>
+
     </View>
   );
 };

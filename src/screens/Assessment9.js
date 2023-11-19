@@ -27,7 +27,7 @@ const Assessment9 = ( {navigation} ) => {
       <View style={styles.headerContainer}>
         <Text style={styles.header}>Assessment</Text>
         <View style={styles.numberContainer}>
-          <Text style={styles.number}>4 of 9</Text>
+          <Text style={styles.number}>9 of 9</Text>
         </View>
       </View>
 
@@ -39,8 +39,13 @@ const Assessment9 = ( {navigation} ) => {
       {renderOption('5: lnsomniac (<3 hours)', '5')}
 
       <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('Dashboard')}>
+<<<<<<< HEAD
         <Text style={styles.continueText}>Continue</Text>
       </TouchableOpacity>
+=======
+            <Text style={styles.continueText}>Continue</Text>
+        </TouchableOpacity>
+>>>>>>> 9336cc9 (v1)
     </View>
   );
 };

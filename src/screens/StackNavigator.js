@@ -12,8 +12,12 @@ import Assessment6 from './Assessment6.js';
 import Assessment7 from './Assessment7.js';
 import Assessment8 from './Assessment8.js';
 import Assessment9 from './Assessment9.js';
+<<<<<<< HEAD
 import DashboardScreen from './DashboardScreen.js';
 import FoodRecommendation from './FoodRecommendation.js';
+=======
+import DashboardScrean from './DashboardScreen.js'
+>>>>>>> 9336cc9 (v1)
 
 const Stack = createStackNavigator();
 
@@ -31,8 +35,13 @@ const StackNavigator = () => {
     <Stack.Screen name="A7" component={Assessment7} options={{ headerShown: false}} />
     <Stack.Screen name="A8" component={Assessment8} options={{ headerShown: false}} />
     <Stack.Screen name="A9" component={Assessment9} options={{ headerShown: false}} />
+<<<<<<< HEAD
     <Stack.Screen name="Dashboard" component={DashboardScreen} options={{ headerShown: false}} />
     <Stack.Screen name="FoodRec" component={FoodRecommendation} options={{ headerShown: false}} />
+=======
+    <Stack.Screen name="Dashboard" component={DashboardScrean} options={{ headerShown: false}} />
+
+>>>>>>> 9336cc9 (v1)
   </Stack.Navigator>
   );
 };

@@ -17,7 +17,7 @@ An app made with React Native for people with medical conditions to assist their
 
 <tr>
 <td width="100" align="center">Eugene Jung</td>
-<td width="250">Designer, Developer</td>
+<td width="250">Designer, Front-end Developer</td>
 <td width="150" align="center">	
 	<a href="https://github.com/jung-eugene">
 	<img src="https://img.shields.io/badge/jungeugene-655ced?style=social&logo=github"/>
@@ -26,7 +26,7 @@ An app made with React Native for people with medical conditions to assist their
 	
 <tr>
 <td width="100" align="center">Jake Jeong</td>
-<td width="250">Developer</td>
+<td width="250">Full Stack Developer</td>
 <td width="150" align="center">	
 	<a href="https://github.com/jakejeong5007">
 	<img src="https://img.shields.io/badge/jakejeong5007-655ced?style=social&logo=github"/>
@@ -34,7 +34,7 @@ An app made with React Native for people with medical conditions to assist their
 
 <tr>
 <td width="100" align="center">Samantha Pang</td>
-<td width="250">Developer</td>
+<td width="250">Front-end Developer</td>
 <td width="150" align="center">	
 	<a href="https://github.com/samanthap88">
 	<img src="https://img.shields.io/badge/samanthap88-655ced?style=social&logo=github"/>

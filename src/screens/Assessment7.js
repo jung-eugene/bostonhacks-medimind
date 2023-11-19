@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import { MaterialIcons, MaterialCommunityIcons, FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 
-const Assessment7 = () => {
+const Assessment7 = ( {navigation} ) => {
   const [selectedItem, setSelectedItem] = useState(null);
 
   const handleToggleItem = (item) => {
@@ -45,9 +45,10 @@ const Assessment7 = () => {
         {renderBox(<FontAwesome5 size={58} name="biking" />, 'Biking', 'biking')}
       </View>
 
-      <View style={styles.continueButton}>
-        <Text style={styles.continueText}>Continue</Text>
-      </View>
+      <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A8')}>
+            <Text style={styles.continueText}>Continue</Text>
+        </TouchableOpacity>
+
     </View>
   );
 };

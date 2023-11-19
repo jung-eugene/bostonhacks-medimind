@@ -32,9 +32,8 @@ const StackNavigator = () => {
     <Stack.Screen name="A7" component={Assessment7} options={{ headerShown: false}} />
     <Stack.Screen name="A8" component={Assessment8} options={{ headerShown: false}} />
     <Stack.Screen name="A9" component={Assessment9} options={{ headerShown: false}} />
-    {/* <Stack.Screen name="Dashboard" component={DashboardScreen} options={{ headerShown: false}} />
+    <Stack.Screen name="Dashboard" component={DashboardScreen} options={{ headerShown: false}} />
     <Stack.Screen name="FoodRec" component={FoodRecommendation} options={{ headerShown: false}} />
-    <Stack.Screen name="Dashboard" component={DashboardScrean} options={{ headerShown: false}} /> */}
 
   </Stack.Navigator>
   );

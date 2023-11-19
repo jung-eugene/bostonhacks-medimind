@@ -107,8 +107,8 @@ const styles = StyleSheet.create({
     height: 175,
     borderRadius: 20,
     marginLeft: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
+    
+
   },
   Container: {
     borderRadius: 20,
@@ -121,12 +121,14 @@ const styles = StyleSheet.create({
   },
   blackText: {
     fontSize: 20,
-    marginTop: 21,
+    marginTop: 21, 
+    marginLeft: 24
   },
   miniText: {
     fontSize: 12,
     marginTop: 5,
     color: '#878787',
+    marginLeft: 24
   },
   number: {
     fontSize: 10,

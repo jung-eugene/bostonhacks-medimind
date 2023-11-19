@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons'; // Make sure to install expo icons or another icon library
 
-
 const DashboardScreen = ( {navigation} ) => {
   return (
     <View style={styles.container}>
@@ -84,7 +83,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   profilePic:{
-    marginLeft: 200
+    marginLeft: 180
   }, 
   header: {
     alignItems: 'left',
@@ -93,11 +92,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   dateText: {
-    fontSize: 16,
+    fontSize: 10,
     color: 'grey',
+    fontWeight: 'bold'
   },
   greetingText: {
-    fontSize: 24,
+    fontSize: 30,
     fontWeight: 'bold',
   },
   profileImage: {
@@ -122,13 +122,11 @@ const styles = StyleSheet.create({
     color: 'white',
     padding: 10,
     textAlign: 'center' 
-
   },
   healthScoreBackground: {
     backgroundColor: 'green', 
     borderRadius: 30, 
     marginRight: 20,
-    marginTop: 20 ,
     width: 50, 
     height: 50, 
     justifyContent: 'center' , 

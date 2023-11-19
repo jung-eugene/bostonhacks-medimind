@@ -44,10 +44,6 @@ const Assessment3 = ( {navigation} ) => {
             <Text style={styles.continueText}>Continue</Text>
         </TouchableOpacity>
 
-       
-        
-       
-
     </View>
   );
 };

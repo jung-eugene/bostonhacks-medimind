@@ -2,25 +2,8 @@ import React from 'react';
 import { StyleSheet, View, Text, Image, ScrollView, TouchableOpacity} from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons'; // Make sure to install expo icons or another icon library
 
-const Navbar = () => {
-    return (
-      <View style={styles.navbarContainer}>
-        <View style={styles.navbarContainer}>
-            <TouchableOpacity style={styles.navItem}>
-                <MaterialIcons name="home" size={24} color="black" />
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.navItem}>
-                <MaterialIcons name="restaurant-menu" size={24} color="black" />
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.navItem}>
-                <MaterialIcons name="calendar-today" size={24} color="black" />
-            </TouchableOpacity>
-        </View>
-      </View>
-    );
-  };
 
-const FoodRecommendation = () => {
+const FoodRecommendation = ( {navigation} ) => {
     return (
         <View style={styles.container}>
         <ScrollView style={styles.content}>
@@ -87,7 +70,19 @@ const FoodRecommendation = () => {
           </View>
         </ScrollView>
 
-        <Navbar/>
+        <View style={styles.navbarContainer}>
+        <View style={styles.navbarContainer}>
+            <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Dashboard')}>
+                <MaterialIcons name="home" size={24} color="black" />
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.navItem}>
+                <MaterialIcons name="restaurant-menu" size={24} color="black" />
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.navItem}>
+                <MaterialIcons name="calendar-today" size={24} color="black" />
+            </TouchableOpacity>
+        </View>
+      </View>
         </View>
       );
     };

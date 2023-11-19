@@ -23,6 +23,9 @@ const Assessment5 = ( {navigation} ) => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+  },
   header: {
     marginTop: 60, 
     marginLeft: 36, 

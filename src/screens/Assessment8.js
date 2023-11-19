@@ -30,11 +30,7 @@ return (
         <DayButton key={day} day={day} />
         ))}
     </View>
-<<<<<<< HEAD
     <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A9')}>
-=======
-        <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A9')}>
->>>>>>> 9336cc9 (v1)
             <Text style={styles.continueText}>Continue</Text>
         </TouchableOpacity>
 

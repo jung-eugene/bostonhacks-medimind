@@ -39,81 +39,84 @@ return (
 };
 
 const styles = StyleSheet.create({
-header: {
-    marginTop: 60, 
-    marginLeft: 36, 
-    fontSize: 18, 
-    fontWeight: 'bold'
-}, 
-headerContainer: {
-    flexDirection: 'row' 
-},
-bigHeader: {
-    marginTop: 42,
-    marginLeft: 36, 
-    fontSize: 26, 
-    fontWeight: 'bold' , 
-    marginBottom: 23 
-}, 
-number: {
-    fontSize: 10
-}, 
-numberContainer: {
-    borderRadius: 20 , 
-    backgroundColor: '#e3f1d3',
-    width: 61 , 
-    height: 22,
-    marginLeft: 153, 
-    marginTop: 60, 
-    paddingLeft: 15, 
-    paddingTop: 5
-}, 
-dayContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    padding: 30,
-},
-dayButton: {
-    backgroundColor: '#f0f0f0',
-    borderRadius: 20,
-    padding: 20,
-    width: 60,
-    height: 60,
-},
-dayButtonSelected: {
-    backgroundColor: '#799D00',
-    borderRadius: 20,
-    padding: 20,
-    width: 60,
-    height: 60,
-},
-dayText: {
-    fontSize: 15,
-    fontWeight: 'bold',
-    color: '#545454',
-    paddingLeft: 5,
-},
-dayTextSelected: {
-    fontSize: 15,
-    fontWeight: 'bold',
-    color: 'white',
-    paddingLeft: 5
-},
-continueButton: {
-    marginTop: 32, 
-    backgroundColor: '#799d00', 
-    width: 342, 
-    height: 62, 
-    borderRadius: 20, 
-    marginLeft: 24, 
-    justifyContent: 'center', 
-    alignItems: 'center'  
-}, 
-continueText: {
-    fontSize: 20 , 
-    fontWeight: 'bold', 
-    color: 'white' ,
-}
+    container: {
+        backgroundColor: 'white',
+    },
+    header: {
+        marginTop: 60, 
+        marginLeft: 36, 
+        fontSize: 18, 
+        fontWeight: 'bold'
+    }, 
+    headerContainer: {
+        flexDirection: 'row' 
+    },
+    bigHeader: {
+        marginTop: 42,
+        marginLeft: 36, 
+        fontSize: 26, 
+        fontWeight: 'bold' , 
+        marginBottom: 23 
+    }, 
+    number: {
+        fontSize: 10
+    }, 
+    numberContainer: {
+        borderRadius: 20 , 
+        backgroundColor: '#e3f1d3',
+        width: 61 , 
+        height: 22,
+        marginLeft: 153, 
+        marginTop: 60, 
+        paddingLeft: 15, 
+        paddingTop: 5
+    }, 
+    dayContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        padding: 30,
+    },
+    dayButton: {
+        backgroundColor: '#f0f0f0',
+        borderRadius: 20,
+        padding: 20,
+        width: 60,
+        height: 60,
+    },
+    dayButtonSelected: {
+        backgroundColor: '#799D00',
+        borderRadius: 20,
+        padding: 20,
+        width: 60,
+        height: 60,
+    },
+    dayText: {
+        fontSize: 15,
+        fontWeight: 'bold',
+        color: '#545454',
+        paddingLeft: 5,
+    },
+    dayTextSelected: {
+        fontSize: 15,
+        fontWeight: 'bold',
+        color: 'white',
+        paddingLeft: 5
+    },
+    continueButton: {
+        marginTop: 32, 
+        backgroundColor: '#799d00', 
+        width: 342, 
+        height: 62, 
+        borderRadius: 20, 
+        marginLeft: 24, 
+        justifyContent: 'center', 
+        alignItems: 'center'  
+    }, 
+    continueText: {
+        fontSize: 20 , 
+        fontWeight: 'bold', 
+        color: 'white' ,
+    }
 });
 
 export default Assessment8;

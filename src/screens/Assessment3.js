@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
+import React , { useState, useEffect }from 'react';
+import { StyleSheet, View, Text, Image, ScrollView, TouchableOpacity} from 'react-native';
+import { MaterialIcons } from '@expo/vector-icons'; // Make sure to install expo icons or another icon library
+import { TextInput } from 'react-native';
 
-const Assessment3 = () => {
+const Assessment3 = ( {navigation} ) => {
   const [selectedUnit, setSelectedUnit] = useState('kg');
 
   const handleUnitSelection = (unit) => {
@@ -14,56 +16,43 @@ const Assessment3 = () => {
   }, []); // Runs only once when the component mounts
 
   return (
-    <View style={styles.container}>
-      <View style={styles.headerContainer}>
-        <Text style={styles.header}>Assessment</Text>
-        <View style={styles.numberContainer}>
-          <Text style={styles.number}>3 of 10</Text>
+    <View>
+        <View style={styles.headerContainer}>
+            <Text style={styles.header}>Assessment</Text>
+            <View style={styles.numberContainer}>
+                <Text style={styles.number}>3 of 9</Text>
+            </View>
         </View>
-      </View>
+        
+        <Text style={styles.bigHeader}>What is your weight?</Text>
+        <View>
+            <View style={styles.container1}>
+                <View style={styles.kgBackground}>
+                    <Text style = {styles.kg}>kg</Text>
+                </View>
+                <View style={styles.lbsBackground}>
+                    <Text style={styles.lbs}>lbs</Text>
+                </View>
+                
+            </View>
+            
+        </View>
+        
+        <TextInput style={styles.input} placeholder="Weight"/>
 
-      <Text style={styles.bigHeader}>What is your weight?</Text>
-
-      <View style={styles.container1}>
-        <TouchableOpacity
-          style={[
-            styles.kgBackground,
-            selectedUnit === 'kg' && { backgroundColor: '#799d00' },
-          ]}
-          onPress={() => handleUnitSelection('kg')}
-        >
-          <Text style={[styles.kg, selectedUnit === 'kg' ? { color: 'white' } : { color: 'black' }]}>
-            kg
-          </Text>
+        <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A4')}>
+            <Text style={styles.continueText}>Continue</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity
-          style={[
-            styles.lbsBackground,
-            selectedUnit === 'lbs' && { backgroundColor: '#799d00' },
-          ]}
-          onPress={() => handleUnitSelection('lbs')}
-        >
-          <Text style={[styles.lbs, selectedUnit === 'lbs' ? { color: 'white' } : { color: 'black' }]}>
-            lbs
-          </Text>
-        </TouchableOpacity>
-      </View>
+       
+        
+       
 
-      <TextInput style={styles.input} placeholder="Weight" />
-
-      <View style={styles.continueButton}>
-        <Text style={styles.continueText}>Continue</Text>
-      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white'
-  },
   header: {
     marginTop: 60,
     marginLeft: 36,
@@ -114,11 +103,10 @@ const styles = StyleSheet.create({
     height: 62,
     fontSize: 20,
     marginLeft: 24,
-    backgroundColor: '#f1f1f1',
-    borderRadius: 20,
-    marginTop: 33,
-    textAlign: 'center',
-    fontWeight: 'bold'
+    backgroundColor: '#f1f1f1', 
+    borderRadius: 20 ,
+    marginTop: 33, 
+    textAlign: 'center' 
   },
   number: {
     fontSize: 10,

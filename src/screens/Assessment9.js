@@ -27,7 +27,7 @@ const Assessment9 = ( {navigation} ) => {
       <View style={styles.headerContainer}>
         <Text style={styles.header}>Assessment</Text>
         <View style={styles.numberContainer}>
-          <Text style={styles.number}>4 of 9</Text>
+          <Text style={styles.number}>9 of 9</Text>
         </View>
       </View>
 

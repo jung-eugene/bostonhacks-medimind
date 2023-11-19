@@ -8,7 +8,7 @@ const DashboardScreen = ( {navigation} ) => {
       <ScrollView style={styles.content}>
         <View style={styles.header}>
           <View style={styles.headerLeft}>
-            <Text style={styles.dateText}>SAT NOV 18</Text>
+            <Text style={styles.dateText}>SUN NOV 19</Text>
             <Text style={styles.greetingText}>Hi, Sam</Text>
           </View>
           <Image style = {styles.profilePic} source={require('medimind/assets/image9.png')}></Image>
@@ -57,14 +57,14 @@ const DashboardScreen = ( {navigation} ) => {
       </ScrollView>
 
       <View style={styles.navbarContainer}>
-          <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Dashboard')}>
               <MaterialIcons name="home" size={24} color="black" />
           </TouchableOpacity>
           <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('FoodRec')}>
               <MaterialIcons name="restaurant-menu" size={24} color="black" />
           </TouchableOpacity>
           <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('SymptomChecker')}>
-              <MaterialIcons name="calendar-today" size={24} color="black" />
+              <MaterialIcons name="check" size={24} color="black" />
           </TouchableOpacity>
       </View>
     </View>

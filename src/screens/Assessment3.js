@@ -22,7 +22,6 @@ const Assessment3 = () => {
         </View>
       </View>
 
-<<<<<<< HEAD
       <Text style={styles.bigHeader}>What is your weight?</Text>
 
       <View style={styles.container1}>
@@ -36,10 +35,6 @@ const Assessment3 = () => {
           <Text style={[styles.kg, selectedUnit === 'kg' ? { color: 'white' } : { color: 'black' }]}>
             kg
           </Text>
-=======
-        <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A4')}>
-            <Text style={styles.continueText}>Continue</Text>
->>>>>>> bc8d251 (v1)
         </TouchableOpacity>
 
         <TouchableOpacity
@@ -91,7 +86,11 @@ const styles = StyleSheet.create({
   },
   kg: {
     color: 'white',
+    fontWeight: 'bold' 
   },
+  lbs: {
+    fontWeight: 'bold'
+  }, 
   kgBackground: {
     backgroundColor: '#f1f1f1',
     width: 172,

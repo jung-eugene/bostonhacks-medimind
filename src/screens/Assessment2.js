@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, View, Text, Image, ScrollView } from 'react-native';
+import { StyleSheet, View, Text, Image, ScrollView , TouchableOpacity} from 'react-native';
 import { TextInput } from 'react-native';
 
-const Assessment2 = () => {
+const Assessment2 = ({ navigation }) => {
   return (
     <View style={styles.container}>
         <View style={styles.headerContainer}>
@@ -14,9 +14,10 @@ const Assessment2 = () => {
         
         <Text style={styles.bigHeader}>What is your age?</Text>
         <TextInput style={styles.input} placeholder="Age"/>
-        <View style={styles.continueButton}>
+
+        <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A3')}>
             <Text style={styles.continueText}>Continue</Text>
-        </View>
+        </TouchableOpacity>
 
     </View>
   );

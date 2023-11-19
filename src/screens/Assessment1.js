@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, View, Text, Image, ScrollView } from 'react-native';
+import { StyleSheet, View, Text, Image, ScrollView , TouchableOpacity} from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons'; // Make sure to install expo icons or another icon library
 
-const Assessment1 = () => {
+const Assessment1 = ({ navigation }) => {
   return (
     <View>
         <View style={styles.headerContainer}>
@@ -22,9 +22,10 @@ const Assessment1 = () => {
         <View style={styles.genderContainerWhite}>
             <Text style={styles.blackText}>Other</Text>
         </View>
-        <View style={styles.continueButton}>
+
+        <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A2')}>
             <Text style={styles.continueText}>Continue</Text>
-        </View>
+        </TouchableOpacity>
 
     </View>
   );

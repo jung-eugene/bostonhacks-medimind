@@ -19,7 +19,7 @@ return (
         <TextInput style={styles.input} placeholder="Password" secureTextEntry />
         
         {/* Sign In Button */}
-        <TouchableOpacity style={styles.button} onPress={() => { /* Handle sign in */ }}>
+        <TouchableOpacity style={styles.button} onPress={() => {}}>
             <Text style={styles.buttonText}>Sign in</Text>
         </TouchableOpacity>
 
@@ -58,7 +58,7 @@ return (
     <TextInput style={styles.input} placeholder="Confirm Password" secureTextEntry />
     
     {/* Sign Up Button */}
-    <TouchableOpacity style={styles.button} onPress={() => { /* Handle sign up */ }}>
+    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('A1')}>
             <Text style={styles.buttonText}>Sign Up</Text>
     </TouchableOpacity>
     

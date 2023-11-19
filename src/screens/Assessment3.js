@@ -1,10 +1,10 @@
 import React from 'react';
-import { StyleSheet, View, Text, Image, ScrollView } from 'react-native';
+import { StyleSheet, View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons'; // Make sure to install expo icons or another icon library
 import { TextInput } from 'react-native';
 import {useState} from 'react' 
 
-const Assessment3 = () => {
+const Assessment3 = ( {navigation} ) => {
     
   return (
     <View>
@@ -30,9 +30,11 @@ const Assessment3 = () => {
         </View>
         
         <TextInput style={styles.input} placeholder="Weight"/>
-        <View style={styles.continueButton}>
+
+        <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A3')}>
             <Text style={styles.continueText}>Continue</Text>
-        </View>
+        </TouchableOpacity>
+
        
         
        

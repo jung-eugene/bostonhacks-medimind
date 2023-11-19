@@ -117,6 +117,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginTop: 33,
     textAlign: 'center',
+    fontWeight: 'bold'
   },
   number: {
     fontSize: 10,

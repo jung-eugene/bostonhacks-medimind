@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
 
-const Assessment3 = () => {
+const Assessment3 = ( {navigation} ) => {
   const [selectedUnit, setSelectedUnit] = useState('kg');
 
   const handleUnitSelection = (unit) => {
@@ -52,9 +52,9 @@ const Assessment3 = () => {
 
       <TextInput style={styles.input} placeholder="Weight" />
 
-      <View style={styles.continueButton}>
-        <Text style={styles.continueText}>Continue</Text>
-      </View>
+      <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A4')}>
+            <Text style={styles.continueText}>Continue</Text>
+        </TouchableOpacity>
     </View>
   );
 };

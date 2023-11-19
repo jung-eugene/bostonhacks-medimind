@@ -2,3 +2,8 @@
 
 ### Description
 An app made with React Native for people with medical conditions to assist their fitness and diet.
+
+### Install Dependencies
+```
+npm install --i
+```

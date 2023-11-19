@@ -17,10 +17,6 @@ const Assessment5 = ( {navigation} ) => {
         <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate('A6')}>
             <Text style={styles.continueText}>Continue</Text>
         </TouchableOpacity>
-<<<<<<< HEAD
-
-=======
->>>>>>> 9336cc9 (v1)
 
     </View>
   );

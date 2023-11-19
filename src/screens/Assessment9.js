@@ -31,7 +31,7 @@ const Assessment9 = ( {navigation} ) => {
         </View>
       </View>
 
-      <Text style={styles.bigHeader}>How would you rate your{'\n'}fitness level?</Text>
+      <Text style={styles.bigHeader}>What’s your sleep quality like?</Text>
       {renderOption('1: Excellent (>8 hours)', '1')}
       {renderOption('2: Great (7-8 hours)', '2')}
       {renderOption('3: Normal (6-7 hours)', '3')}

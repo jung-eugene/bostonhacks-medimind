@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 
-const Assessment4 = ( {navigation} ) => {
+const Assessment1 = ( {navigation} ) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleSelectOption = (option) => {
@@ -108,4 +108,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Assessment4;
+export default Assessment1;

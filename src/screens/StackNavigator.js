@@ -14,7 +14,7 @@ import Assessment8 from './Assessment8.js';
 import Assessment9 from './Assessment9.js';
 import DashboardScreen from './DashboardScreen.js';
 import FoodRecommendation from './FoodRecommendation.js';
-import DashboardScrean from './DashboardScreen.js'
+import SymptomCheckerScreen from './SymptomChecker.js';
 
 const Stack = createStackNavigator();
 
@@ -34,6 +34,8 @@ const StackNavigator = () => {
     <Stack.Screen name="A9" component={Assessment9} options={{ headerShown: false}} />
     <Stack.Screen name="Dashboard" component={DashboardScreen} options={{ headerShown: false}} />
     <Stack.Screen name="FoodRec" component={FoodRecommendation} options={{ headerShown: false}} />
+    <Stack.Screen name="SymptomChecker" component={SymptomCheckerScreen} options={{ headerShown: false}} />
+
 
   </Stack.Navigator>
   );

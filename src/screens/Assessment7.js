@@ -31,7 +31,7 @@ const Assessment7 = () => {
       <View style={styles.headerContainer}>
         <Text style={styles.header}>Assessment</Text>
         <View style={styles.numberContainer}>
-          <Text style={styles.number}>7 of 10</Text>
+          <Text style={styles.number}>7 of 9</Text>
         </View>
       </View>
 

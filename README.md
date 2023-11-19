@@ -3,6 +3,9 @@
 ## Description
 An app made with React Native for people with medical conditions to assist their fitness and diet.
 
+<img width="910" alt="Screenshot 2023-11-19 at 3 29 48 AM" src="https://github.com/jung-eugene/bostonhacks-medimind/assets/114817519/0bffee7e-b254-4711-97c2-802b81db5ccb">
+
+
 ## Team Information
 
 <table width="900">

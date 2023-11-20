@@ -50,7 +50,11 @@ An app made with React Native for those with medical conditions seeking assistan
 </table>
 
 ## Demo
-https://youtu.be/bQmJ6NMnLK4?si=10o_NV82evNXRWqn
+<div align="left">
+      <a href="https://www.youtube.com/watch?v=bQmJ6NMnLK4&t=11s">
+         <img width="992" alt="Screenshot 2023-11-20 at 9 27 40 AM" src="https://github.com/jung-eugene/bostonhacks-medimind/assets/114817519/a6c805a2-11d1-43ee-851b-3178c5bcccda">
+      </a>
+</div>
 
 ## Cloning Repository
 ```
